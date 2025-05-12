@@ -1,8 +1,13 @@
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java. util.Arrays;
+import java.util.List;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package exception;
 
 /**
  *
@@ -10,20 +15,21 @@ package exception;
  */
 public class main {
 
-    
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-       try{
-           
-           int v[]={1,2,4,5};
-           System.out.println("el resultado es"+v[4]);
-       }
-           catch(Exception e){
-                   System.out.println(e );
-       }
-       finally{
-           System.out.println("esto es un mensaje desde el final");
-       }
-       }
+    }
+    private static void crearArchivoListas(){
+        List<String> lineas = Arrays.asList(
+        "duban",
+        "vasquez",
+        "gallo"
+        );
+        
+        try (bufferedWriter writer = new BufferedWriter(new FileWriter("archivo.txt"))){
+            
+        }
     }
     
-
+}
