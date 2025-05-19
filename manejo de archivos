@@ -28,9 +28,10 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        usuarios FU = new usuarios();
+        FU.setVisible(true);
         
-        
-        
+        /*
         //LeerArchivoListas();
         
         String ARCHIVO_JSON = "datos.json";
@@ -42,7 +43,7 @@ public class Main {
         //CrearArchivoMapas(usuario,ARCHIVO_JSON);
         Map<String,String> Usuarios = LeerArchivoMapas(ARCHIVO_JSON);
         System.out.println("Esto son los datos en el archivo: " + Usuarios);
-        
+        */
     
     }
     
